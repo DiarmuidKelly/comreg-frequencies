@@ -1,0 +1,69 @@
+name: Refresh ComReg data
+
+# ComReg amend the plan a handful of times a year with no announcement, so poll
+# monthly and raise a PR only when the scrape actually differs. The PR diff is
+# the changelog: which bands, footnotes or instruments moved.
+on:
+  schedule:
+    - cron: '17 4 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scrape rfpi.comreg.ie
+        run: node scripts/fetch-data.mjs
+
+      # Not committed — but building it proves the new scrape normalises cleanly
+      # before anyone is asked to merge it.
+      - name: Rebuild the bundle
+        run: node scripts/build-data.mjs
+
+      - name: Summarise what changed
+        id: diff
+        run: |
+          # public/data is generated and carries a build date, so judge change
+          # on the raw payloads alone.
+          if git diff --quiet -- data/raw; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change in ComReg's data."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo 'summary<<EOF'
+              git diff --stat -- data/raw
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open a pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/refresh
+          title: 'Refresh ComReg RFPI data'
+          commit-message: 'Refresh ComReg RFPI data snapshot'
+          body: |
+            ComReg's Radio Frequency Plan for Ireland has changed since the last snapshot.
+
+            ```
+            ${{ steps.diff.outputs.summary }}
+            ```
+
+            Review the `data/raw` diff to see which bands, footnotes or instruments moved,
+            then merge to publish.
+          add-paths: data/raw

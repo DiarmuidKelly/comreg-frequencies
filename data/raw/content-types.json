@@ -1,0 +1,92 @@
+[
+  {
+    "ContentTypeId": 0,
+    "Description": "UNKNOWN",
+    "Count": 0
+  },
+  {
+    "ContentTypeId": 1,
+    "Description": "RADIO SERVICE",
+    "Count": 34
+  },
+  {
+    "ContentTypeId": 2,
+    "Description": "NATIONAL USAGE",
+    "Count": 37
+  },
+  {
+    "ContentTypeId": 3,
+    "Description": "CEPT ARRANGEMENT",
+    "Count": 0
+  },
+  {
+    "ContentTypeId": 4,
+    "Description": "CEPT DOCUMENTATION",
+    "Count": 46
+  },
+  {
+    "ContentTypeId": 5,
+    "Description": "CEPT RECOMMENDATION",
+    "Count": 29
+  },
+  {
+    "ContentTypeId": 6,
+    "Description": "EUROPEAN FOOTNOTE",
+    "Count": 28
+  },
+  {
+    "ContentTypeId": 7,
+    "Description": "ITU DOCUMENTATION",
+    "Count": 1
+  },
+  {
+    "ContentTypeId": 8,
+    "Description": "ITU FOOTNOTE",
+    "Count": 430
+  },
+  {
+    "ContentTypeId": 9,
+    "Description": "PRIMARY LEGISLATION",
+    "Count": 3
+  },
+  {
+    "ContentTypeId": 10,
+    "Description": "SECONDARY LEGISLATION",
+    "Count": 71
+  },
+  {
+    "ContentTypeId": 11,
+    "Description": "EUROPEAN LEGISLATION",
+    "Count": 55
+  },
+  {
+    "ContentTypeId": 12,
+    "Description": "ABBREVIATION",
+    "Count": 2
+  },
+  {
+    "ContentTypeId": 13,
+    "Description": "DEFINITION",
+    "Count": 0
+  },
+  {
+    "ContentTypeId": 14,
+    "Description": "COMREG DOCUMENTATION",
+    "Count": 2
+  },
+  {
+    "ContentTypeId": 15,
+    "Description": "OTHER DOCUMENTATION",
+    "Count": 0
+  },
+  {
+    "ContentTypeId": 16,
+    "Description": "ADDITIONAL CONTENT",
+    "Count": 0
+  },
+  {
+    "ContentTypeId": 17,
+    "Description": "NOTES",
+    "Count": 147
+  }
+]

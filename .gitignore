@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+# Derived from data/raw by scripts/build-data.mjs — regenerated on every build,
+# so committing it would just add noise to every data refresh.
+public/data/
+*.local
+.DS_Store
+.vite/

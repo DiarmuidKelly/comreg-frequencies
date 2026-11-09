@@ -1,0 +1,2832 @@
+[
+  {
+    "FrequencyRangeId": 0,
+    "FrequencyRangeName": "0 - 8.3 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 100,
+    "FrequencyRangeName": "8.3 - 9 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 200,
+    "FrequencyRangeName": "9 - 11.3 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 300,
+    "FrequencyRangeName": "11.3 - 14 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 400,
+    "FrequencyRangeName": "14 - 19.95 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 500,
+    "FrequencyRangeName": "19.95 - 20.05 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 600,
+    "FrequencyRangeName": "20.05 - 70 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 700,
+    "FrequencyRangeName": "70 - 72 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 800,
+    "FrequencyRangeName": "72 - 84 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 900,
+    "FrequencyRangeName": "84 - 86 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1000,
+    "FrequencyRangeName": "86 - 90 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1100,
+    "FrequencyRangeName": "90 - 110 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1200,
+    "FrequencyRangeName": "110 - 112 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1300,
+    "FrequencyRangeName": "112 - 115 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1400,
+    "FrequencyRangeName": "115 - 117.6 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1500,
+    "FrequencyRangeName": "117.6 - 126 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1600,
+    "FrequencyRangeName": "126 - 129 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1700,
+    "FrequencyRangeName": "129 - 130 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1800,
+    "FrequencyRangeName": "130 - 135.7 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 1900,
+    "FrequencyRangeName": "135.7 - 137.8 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2000,
+    "FrequencyRangeName": "137.8 - 148.5 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2100,
+    "FrequencyRangeName": "148.5 - 255 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2200,
+    "FrequencyRangeName": "255 - 283.5 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2300,
+    "FrequencyRangeName": "283.5 - 315 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2400,
+    "FrequencyRangeName": "315 - 325 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2500,
+    "FrequencyRangeName": "325 - 405 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2600,
+    "FrequencyRangeName": "405 - 415 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2700,
+    "FrequencyRangeName": "415 - 435 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2800,
+    "FrequencyRangeName": "435 - 472 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 2900,
+    "FrequencyRangeName": "472 - 479 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3000,
+    "FrequencyRangeName": "479 - 495 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3100,
+    "FrequencyRangeName": "495 - 505 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3200,
+    "FrequencyRangeName": "505 - 526.5 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3300,
+    "FrequencyRangeName": "526.5 - 1606.5 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3400,
+    "FrequencyRangeName": "1606.5 - 1625 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3500,
+    "FrequencyRangeName": "1625 - 1635 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3600,
+    "FrequencyRangeName": "1635 - 1800 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3700,
+    "FrequencyRangeName": "1800 - 1810 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3800,
+    "FrequencyRangeName": "1810 - 1850 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 3900,
+    "FrequencyRangeName": "1850 - 2000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4000,
+    "FrequencyRangeName": "2000 - 2025 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4100,
+    "FrequencyRangeName": "2025 - 2045 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4200,
+    "FrequencyRangeName": "2045 - 2160 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4300,
+    "FrequencyRangeName": "2160 - 2170 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4400,
+    "FrequencyRangeName": "2170 - 2173.5 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4500,
+    "FrequencyRangeName": "2173.5 - 2190.5 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4600,
+    "FrequencyRangeName": "2190.5 - 2194 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4700,
+    "FrequencyRangeName": "2194 - 2300 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4800,
+    "FrequencyRangeName": "2300 - 2498 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 4900,
+    "FrequencyRangeName": "2498 - 2501 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5000,
+    "FrequencyRangeName": "2501 - 2502 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5100,
+    "FrequencyRangeName": "2502 - 2625 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5200,
+    "FrequencyRangeName": "2625 - 2650 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5300,
+    "FrequencyRangeName": "2650 - 2850 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5400,
+    "FrequencyRangeName": "2850 - 3025 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5500,
+    "FrequencyRangeName": "3025 - 3155 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5600,
+    "FrequencyRangeName": "3155 - 3200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5700,
+    "FrequencyRangeName": "3200 - 3230 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5800,
+    "FrequencyRangeName": "3230 - 3400 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 5900,
+    "FrequencyRangeName": "3400 - 3500 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6000,
+    "FrequencyRangeName": "3500 - 3800 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6100,
+    "FrequencyRangeName": "3800 - 3900 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6200,
+    "FrequencyRangeName": "3900 - 3950 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6300,
+    "FrequencyRangeName": "3950 - 4000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6400,
+    "FrequencyRangeName": "4000 - 4063 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6500,
+    "FrequencyRangeName": "4063 - 4438 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6600,
+    "FrequencyRangeName": "4438 - 4488 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6700,
+    "FrequencyRangeName": "4488 - 4650 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6800,
+    "FrequencyRangeName": "4650 - 4700 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 6900,
+    "FrequencyRangeName": "4700 - 4750 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7000,
+    "FrequencyRangeName": "4750 - 4850 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7100,
+    "FrequencyRangeName": "4850 - 4995 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7200,
+    "FrequencyRangeName": "4995 - 5003 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7300,
+    "FrequencyRangeName": "5003 - 5005 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7400,
+    "FrequencyRangeName": "5005 - 5060 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7500,
+    "FrequencyRangeName": "5060 - 5250 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7600,
+    "FrequencyRangeName": "5250 - 5275 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7700,
+    "FrequencyRangeName": "5275 - 5450 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7800,
+    "FrequencyRangeName": "5450 - 5480 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 7900,
+    "FrequencyRangeName": "5480 - 5680 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8000,
+    "FrequencyRangeName": "5680 - 5730 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8100,
+    "FrequencyRangeName": "5730 - 5900 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8200,
+    "FrequencyRangeName": "5900 - 5950 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8300,
+    "FrequencyRangeName": "5950 - 6200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8400,
+    "FrequencyRangeName": "6200 - 6525 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8500,
+    "FrequencyRangeName": "6525 - 6685 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8600,
+    "FrequencyRangeName": "6685 - 6765 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8700,
+    "FrequencyRangeName": "6765 - 7000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8800,
+    "FrequencyRangeName": "7000 - 7100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 8900,
+    "FrequencyRangeName": "7100 - 7200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9000,
+    "FrequencyRangeName": "7200 - 7300 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9100,
+    "FrequencyRangeName": "7300 - 7400 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9200,
+    "FrequencyRangeName": "7400 - 7450 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9300,
+    "FrequencyRangeName": "7450 - 8100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9400,
+    "FrequencyRangeName": "8100 - 8195 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9500,
+    "FrequencyRangeName": "8195 - 8815 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9600,
+    "FrequencyRangeName": "8815 - 8965 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9700,
+    "FrequencyRangeName": "8965 - 9040 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9800,
+    "FrequencyRangeName": "9040 - 9305 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 9900,
+    "FrequencyRangeName": "9305 - 9355 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10000,
+    "FrequencyRangeName": "9355 - 9400 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10100,
+    "FrequencyRangeName": "9400 - 9500 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10200,
+    "FrequencyRangeName": "9500 - 9900 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10300,
+    "FrequencyRangeName": "9900 - 9995 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10400,
+    "FrequencyRangeName": "9995 - 10003 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10500,
+    "FrequencyRangeName": "10003 - 10005 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10600,
+    "FrequencyRangeName": "10005 - 10100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10700,
+    "FrequencyRangeName": "10100 - 10150 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10800,
+    "FrequencyRangeName": "10150 - 11175 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 10900,
+    "FrequencyRangeName": "11175 - 11275 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11000,
+    "FrequencyRangeName": "11275 - 11400 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11100,
+    "FrequencyRangeName": "11400 - 11600 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11200,
+    "FrequencyRangeName": "11600 - 11650 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11300,
+    "FrequencyRangeName": "11650 - 12050 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11400,
+    "FrequencyRangeName": "12050 - 12100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11500,
+    "FrequencyRangeName": "12100 - 12230 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11600,
+    "FrequencyRangeName": "12230 - 13200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11700,
+    "FrequencyRangeName": "13200 - 13260 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11800,
+    "FrequencyRangeName": "13260 - 13360 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 11900,
+    "FrequencyRangeName": "13360 - 13410 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12000,
+    "FrequencyRangeName": "13410 - 13450 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12100,
+    "FrequencyRangeName": "13450 - 13550 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12200,
+    "FrequencyRangeName": "13550 - 13570 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12300,
+    "FrequencyRangeName": "13570 - 13600 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12400,
+    "FrequencyRangeName": "13600 - 13800 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12500,
+    "FrequencyRangeName": "13800 - 13870 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12600,
+    "FrequencyRangeName": "13870 - 14000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12700,
+    "FrequencyRangeName": "14000 - 14250 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12800,
+    "FrequencyRangeName": "14250 - 14350 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 12900,
+    "FrequencyRangeName": "14350 - 14990 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13000,
+    "FrequencyRangeName": "14990 - 15005 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13100,
+    "FrequencyRangeName": "15005 - 15010 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13200,
+    "FrequencyRangeName": "15010 - 15100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13300,
+    "FrequencyRangeName": "15100 - 15600 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13400,
+    "FrequencyRangeName": "15600 - 15800 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13500,
+    "FrequencyRangeName": "15800 - 16100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13600,
+    "FrequencyRangeName": "16100 - 16200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13700,
+    "FrequencyRangeName": "16200 - 16360 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13800,
+    "FrequencyRangeName": "16360 - 17410 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 13900,
+    "FrequencyRangeName": "17410 - 17480 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14000,
+    "FrequencyRangeName": "17480 - 17550 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14100,
+    "FrequencyRangeName": "17550 - 17900 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14200,
+    "FrequencyRangeName": "17900 - 17970 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14300,
+    "FrequencyRangeName": "17970 - 18030 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14400,
+    "FrequencyRangeName": "18030 - 18052 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14500,
+    "FrequencyRangeName": "18052 - 18068 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14600,
+    "FrequencyRangeName": "18068 - 18168 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14700,
+    "FrequencyRangeName": "18168 - 18780 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14800,
+    "FrequencyRangeName": "18780 - 18900 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 14900,
+    "FrequencyRangeName": "18900 - 19020 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15000,
+    "FrequencyRangeName": "19020 - 19680 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15100,
+    "FrequencyRangeName": "19680 - 19800 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15200,
+    "FrequencyRangeName": "19800 - 19990 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15300,
+    "FrequencyRangeName": "19990 - 19995 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15400,
+    "FrequencyRangeName": "19995 - 20010 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15500,
+    "FrequencyRangeName": "20010 - 21000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15600,
+    "FrequencyRangeName": "21000 - 21450 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15700,
+    "FrequencyRangeName": "21450 - 21850 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15800,
+    "FrequencyRangeName": "21850 - 21870 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 15900,
+    "FrequencyRangeName": "21870 - 21924 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16000,
+    "FrequencyRangeName": "21924 - 22000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16100,
+    "FrequencyRangeName": "22000 - 22855 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16200,
+    "FrequencyRangeName": "22855 - 23000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16300,
+    "FrequencyRangeName": "23000 - 23200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16400,
+    "FrequencyRangeName": "23200 - 23350 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16500,
+    "FrequencyRangeName": "23350 - 24000 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16600,
+    "FrequencyRangeName": "24000 - 24450 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16700,
+    "FrequencyRangeName": "24450 - 24600 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16800,
+    "FrequencyRangeName": "24600 - 24890 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 16900,
+    "FrequencyRangeName": "24890 - 24990 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17000,
+    "FrequencyRangeName": "24990 - 25005 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17100,
+    "FrequencyRangeName": "25005 - 25010 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17200,
+    "FrequencyRangeName": "25010 - 25070 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17300,
+    "FrequencyRangeName": "25070 - 25210 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17400,
+    "FrequencyRangeName": "25210 - 25550 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17500,
+    "FrequencyRangeName": "25550 - 25670 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17600,
+    "FrequencyRangeName": "25670 - 26100 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17700,
+    "FrequencyRangeName": "26100 - 26175 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17800,
+    "FrequencyRangeName": "26175 - 26200 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 17900,
+    "FrequencyRangeName": "26200 - 26350 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18000,
+    "FrequencyRangeName": "26350 - 27500 kHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18100,
+    "FrequencyRangeName": "27.5 - 28 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18200,
+    "FrequencyRangeName": "28 - 29.7 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18300,
+    "FrequencyRangeName": "29.7 - 30.005 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18400,
+    "FrequencyRangeName": "30.005 - 30.01 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18500,
+    "FrequencyRangeName": "30.01 - 37.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18600,
+    "FrequencyRangeName": "37.5 - 38.25 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18700,
+    "FrequencyRangeName": "38.25 - 39 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18800,
+    "FrequencyRangeName": "39 - 39.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 18900,
+    "FrequencyRangeName": "39.5 - 39.986 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19000,
+    "FrequencyRangeName": "39.986 - 40.02 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19100,
+    "FrequencyRangeName": "40.02 - 40.66 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19110,
+    "FrequencyRangeName": "40.66 - 40.7 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19120,
+    "FrequencyRangeName": "40.7 - 40.98 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19200,
+    "FrequencyRangeName": "40.98 - 41.015 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19300,
+    "FrequencyRangeName": "41.015 - 42 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19400,
+    "FrequencyRangeName": "42 - 42.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19500,
+    "FrequencyRangeName": "42.5 - 44 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19600,
+    "FrequencyRangeName": "44 - 47 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19700,
+    "FrequencyRangeName": "47 - 50 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19710,
+    "FrequencyRangeName": "50 - 52 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19720,
+    "FrequencyRangeName": "52 - 68 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19800,
+    "FrequencyRangeName": "68 - 70.45 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19810,
+    "FrequencyRangeName": "70.45 - 74.8 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 19900,
+    "FrequencyRangeName": "74.8 - 75.2 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20000,
+    "FrequencyRangeName": "75.2 - 87.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20100,
+    "FrequencyRangeName": "87.5 - 100 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20200,
+    "FrequencyRangeName": "100 - 108 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20300,
+    "FrequencyRangeName": "108 - 117.975 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20400,
+    "FrequencyRangeName": "117.975 - 121.45 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20410,
+    "FrequencyRangeName": "121.45 - 121.55 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20420,
+    "FrequencyRangeName": "121.55 - 136 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20430,
+    "FrequencyRangeName": "136 - 137 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20500,
+    "FrequencyRangeName": "137 - 137.025 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20600,
+    "FrequencyRangeName": "137.025 - 137.175 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20700,
+    "FrequencyRangeName": "137.175 - 137.825 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20800,
+    "FrequencyRangeName": "137.825 - 138 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 20900,
+    "FrequencyRangeName": "138 - 143.6 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21000,
+    "FrequencyRangeName": "143.6 - 143.65 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21100,
+    "FrequencyRangeName": "143.65 - 144 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21200,
+    "FrequencyRangeName": "144 - 146 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21300,
+    "FrequencyRangeName": "146 - 148 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21400,
+    "FrequencyRangeName": "148 - 149.9 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21500,
+    "FrequencyRangeName": "149.9 - 150.05 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21600,
+    "FrequencyRangeName": "150.05 - 153 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21700,
+    "FrequencyRangeName": "153 - 154 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21800,
+    "FrequencyRangeName": "154 - 156.488 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21900,
+    "FrequencyRangeName": "156.488 - 156.512 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21910,
+    "FrequencyRangeName": "156.512 - 156.537 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 21920,
+    "FrequencyRangeName": "156.537 - 156.563 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22000,
+    "FrequencyRangeName": "156.563 - 156.762 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22100,
+    "FrequencyRangeName": "156.762 - 156.787 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22200,
+    "FrequencyRangeName": "156.787 - 156.813 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22300,
+    "FrequencyRangeName": "156.813 - 156.838 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22400,
+    "FrequencyRangeName": "156.838 - 157.188 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22410,
+    "FrequencyRangeName": "157.188 - 157.338 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22420,
+    "FrequencyRangeName": "157.338 - 161.787 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22430,
+    "FrequencyRangeName": "161.787 - 161.938 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22440,
+    "FrequencyRangeName": "161.938 - 161.963 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22500,
+    "FrequencyRangeName": "161.963 - 161.988 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22600,
+    "FrequencyRangeName": "161.988 - 162.012 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22700,
+    "FrequencyRangeName": "162.012 - 162.037 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22800,
+    "FrequencyRangeName": "162.037 - 169.4 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22810,
+    "FrequencyRangeName": "169.4 - 169.813 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22820,
+    "FrequencyRangeName": "169.813 - 174 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 22900,
+    "FrequencyRangeName": "174 - 223 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23000,
+    "FrequencyRangeName": "223 - 225 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23010,
+    "FrequencyRangeName": "225 - 230 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23100,
+    "FrequencyRangeName": "230 - 235 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23200,
+    "FrequencyRangeName": "235 - 240 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23210,
+    "FrequencyRangeName": "240 - 242.95 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23220,
+    "FrequencyRangeName": "242.95 - 243.05 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23230,
+    "FrequencyRangeName": "243.05 - 267 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23300,
+    "FrequencyRangeName": "267 - 272 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23400,
+    "FrequencyRangeName": "272 - 273 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23500,
+    "FrequencyRangeName": "273 - 312 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23600,
+    "FrequencyRangeName": "312 - 315 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23700,
+    "FrequencyRangeName": "315 - 322 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23800,
+    "FrequencyRangeName": "322 - 328.6 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 23900,
+    "FrequencyRangeName": "328.6 - 335.4 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24000,
+    "FrequencyRangeName": "335.4 - 380 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24010,
+    "FrequencyRangeName": "380 - 385 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24020,
+    "FrequencyRangeName": "385 - 387 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24100,
+    "FrequencyRangeName": "387 - 390 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24200,
+    "FrequencyRangeName": "390 - 395 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24210,
+    "FrequencyRangeName": "395 - 399.99 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24300,
+    "FrequencyRangeName": "399.9 - 400.05 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24400,
+    "FrequencyRangeName": "400.05 - 400.15 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24500,
+    "FrequencyRangeName": "400.15 - 401 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24600,
+    "FrequencyRangeName": "401 - 402 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24700,
+    "FrequencyRangeName": "402 - 403 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24800,
+    "FrequencyRangeName": "403 - 406 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 24900,
+    "FrequencyRangeName": "406 - 406.1 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25000,
+    "FrequencyRangeName": "406.1 - 410 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25100,
+    "FrequencyRangeName": "410 - 420 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25200,
+    "FrequencyRangeName": "420 - 430 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25300,
+    "FrequencyRangeName": "430 - 432 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25400,
+    "FrequencyRangeName": "432 - 433.05 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25410,
+    "FrequencyRangeName": "433.05 - 434.79 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25420,
+    "FrequencyRangeName": "434.79 - 438 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25500,
+    "FrequencyRangeName": "438 - 440 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25600,
+    "FrequencyRangeName": "440 - 450 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25700,
+    "FrequencyRangeName": "450 - 455 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25800,
+    "FrequencyRangeName": "455 - 456 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 25900,
+    "FrequencyRangeName": "456 - 459 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26000,
+    "FrequencyRangeName": "459 - 460 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26100,
+    "FrequencyRangeName": "460 - 470 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26200,
+    "FrequencyRangeName": "470 - 694 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26210,
+    "FrequencyRangeName": "694 - 790 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26300,
+    "FrequencyRangeName": "790 - 862 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26400,
+    "FrequencyRangeName": "862 - 890 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26500,
+    "FrequencyRangeName": "890 - 942 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26600,
+    "FrequencyRangeName": "942 - 960 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26700,
+    "FrequencyRangeName": "960 - 1164 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26800,
+    "FrequencyRangeName": "1164 - 1215 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 26900,
+    "FrequencyRangeName": "1215 - 1240 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27000,
+    "FrequencyRangeName": "1240 - 1300 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27100,
+    "FrequencyRangeName": "1300 - 1350 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27200,
+    "FrequencyRangeName": "1350 - 1400 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27300,
+    "FrequencyRangeName": "1400 - 1427 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27400,
+    "FrequencyRangeName": "1427 - 1429 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27500,
+    "FrequencyRangeName": "1429 - 1452 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27600,
+    "FrequencyRangeName": "1452 - 1492 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27700,
+    "FrequencyRangeName": "1492 - 1518 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27800,
+    "FrequencyRangeName": "1518 - 1525 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 27900,
+    "FrequencyRangeName": "1525 - 1530 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28000,
+    "FrequencyRangeName": "1530 - 1535 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28100,
+    "FrequencyRangeName": "1535 - 1559 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28200,
+    "FrequencyRangeName": "1559 - 1610 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28300,
+    "FrequencyRangeName": "1610 - 1610.6 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28400,
+    "FrequencyRangeName": "1610.6 - 1613.8 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28500,
+    "FrequencyRangeName": "1613.8 - 1621.35 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28510,
+    "FrequencyRangeName": "1621.35 - 1626.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28600,
+    "FrequencyRangeName": "1626.5 - 1660 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28700,
+    "FrequencyRangeName": "1660 - 1660.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28800,
+    "FrequencyRangeName": "1660.5 - 1668 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 28900,
+    "FrequencyRangeName": "1668 - 1668.4 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29000,
+    "FrequencyRangeName": "1668.4 - 1670 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29100,
+    "FrequencyRangeName": "1670 - 1675 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29200,
+    "FrequencyRangeName": "1675 - 1690 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29300,
+    "FrequencyRangeName": "1690 - 1700 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29400,
+    "FrequencyRangeName": "1700 - 1710 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29500,
+    "FrequencyRangeName": "1710 - 1930 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29600,
+    "FrequencyRangeName": "1930 - 1970 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29700,
+    "FrequencyRangeName": "1970 - 1980 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29800,
+    "FrequencyRangeName": "1980 - 2010 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 29900,
+    "FrequencyRangeName": "2010 - 2025 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30000,
+    "FrequencyRangeName": "2025 - 2110 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30100,
+    "FrequencyRangeName": "2110 - 2120 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30200,
+    "FrequencyRangeName": "2120 - 2170 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30400,
+    "FrequencyRangeName": "2170 - 2200 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30500,
+    "FrequencyRangeName": "2200 - 2290 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30600,
+    "FrequencyRangeName": "2290 - 2300 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30700,
+    "FrequencyRangeName": "2300 - 2450 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30800,
+    "FrequencyRangeName": "2450 - 2483.5 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 30900,
+    "FrequencyRangeName": "2483.5 - 2500 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31000,
+    "FrequencyRangeName": "2500 - 2520 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31100,
+    "FrequencyRangeName": "2520 - 2655 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31200,
+    "FrequencyRangeName": "2655 - 2670 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31300,
+    "FrequencyRangeName": "2670 - 2690 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31400,
+    "FrequencyRangeName": "2690 - 2700 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31500,
+    "FrequencyRangeName": "2700 - 2900 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31600,
+    "FrequencyRangeName": "2900 - 3100 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31700,
+    "FrequencyRangeName": "3100 - 3300 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31800,
+    "FrequencyRangeName": "3300 - 3400 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 31900,
+    "FrequencyRangeName": "3400 - 3600 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32000,
+    "FrequencyRangeName": "3600 - 4200 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32100,
+    "FrequencyRangeName": "4200 - 4400 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32200,
+    "FrequencyRangeName": "4400 - 4500 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32300,
+    "FrequencyRangeName": "4500 - 4800 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32400,
+    "FrequencyRangeName": "4800 - 4990 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32500,
+    "FrequencyRangeName": "4990 - 5000 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32600,
+    "FrequencyRangeName": "5000 - 5010 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32700,
+    "FrequencyRangeName": "5010 - 5030 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32800,
+    "FrequencyRangeName": "5030 - 5091 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 32900,
+    "FrequencyRangeName": "5091 - 5150 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33000,
+    "FrequencyRangeName": "5150 - 5250 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33100,
+    "FrequencyRangeName": "5250 - 5255 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33200,
+    "FrequencyRangeName": "5255 - 5350 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33300,
+    "FrequencyRangeName": "5350 - 5460 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33400,
+    "FrequencyRangeName": "5460 - 5470 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33500,
+    "FrequencyRangeName": "5470 - 5570 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33600,
+    "FrequencyRangeName": "5570 - 5650 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33700,
+    "FrequencyRangeName": "5650 - 5725 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33800,
+    "FrequencyRangeName": "5725 - 5830 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 33900,
+    "FrequencyRangeName": "5830 - 5850 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34000,
+    "FrequencyRangeName": "5850 - 5925 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34100,
+    "FrequencyRangeName": "5925 - 6700 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34200,
+    "FrequencyRangeName": "6700 - 7075 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34300,
+    "FrequencyRangeName": "7075 - 7145 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34400,
+    "FrequencyRangeName": "7145 - 7235 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34500,
+    "FrequencyRangeName": "7235 - 7250 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34600,
+    "FrequencyRangeName": "7250 - 7300 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34700,
+    "FrequencyRangeName": "7300 - 7450 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34800,
+    "FrequencyRangeName": "7450 - 7550 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 34900,
+    "FrequencyRangeName": "7550 - 7750 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35000,
+    "FrequencyRangeName": "7750 - 7900 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35100,
+    "FrequencyRangeName": "7900 - 8025 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35200,
+    "FrequencyRangeName": "8025 - 8175 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35300,
+    "FrequencyRangeName": "8175 - 8215 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35400,
+    "FrequencyRangeName": "8215 - 8400 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35500,
+    "FrequencyRangeName": "8400 - 8500 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35600,
+    "FrequencyRangeName": "8500 - 8550 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35700,
+    "FrequencyRangeName": "8550 - 8650 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35800,
+    "FrequencyRangeName": "8650 - 8750 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 35900,
+    "FrequencyRangeName": "8750 - 8850 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36000,
+    "FrequencyRangeName": "8850 - 9000 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36100,
+    "FrequencyRangeName": "9000 - 9200 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36200,
+    "FrequencyRangeName": "9200 - 9300 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36300,
+    "FrequencyRangeName": "9300 - 9500 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36400,
+    "FrequencyRangeName": "9500 - 9800 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36500,
+    "FrequencyRangeName": "9800 - 9900 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36600,
+    "FrequencyRangeName": "9900 - 10000 MHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36700,
+    "FrequencyRangeName": "10 - 10.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36710,
+    "FrequencyRangeName": "10.4 - 10.45 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36800,
+    "FrequencyRangeName": "10.45 - 10.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 36900,
+    "FrequencyRangeName": "10.5 - 10.55 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37000,
+    "FrequencyRangeName": "10.55 - 10.6 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37100,
+    "FrequencyRangeName": "10.6 - 10.68 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37200,
+    "FrequencyRangeName": "10.68 - 10.7 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37300,
+    "FrequencyRangeName": "10.7 - 10.95 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37310,
+    "FrequencyRangeName": "10.95 - 11.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37320,
+    "FrequencyRangeName": "11.2 - 11.45 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37330,
+    "FrequencyRangeName": "11.45 - 11.7 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37400,
+    "FrequencyRangeName": "11.7 - 12.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37500,
+    "FrequencyRangeName": "12.5 - 12.75 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37600,
+    "FrequencyRangeName": "12.75 - 13.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37700,
+    "FrequencyRangeName": "13.25 - 13.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37800,
+    "FrequencyRangeName": "13.4 - 13.65 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37810,
+    "FrequencyRangeName": "13.65 - 13.75 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 37900,
+    "FrequencyRangeName": "13.75 - 14 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38000,
+    "FrequencyRangeName": "14 - 14.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38100,
+    "FrequencyRangeName": "14.25 - 14.3 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38200,
+    "FrequencyRangeName": "14.3 - 14.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38300,
+    "FrequencyRangeName": "14.4 - 14.47 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38400,
+    "FrequencyRangeName": "14.47 - 14.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38500,
+    "FrequencyRangeName": "14.5 - 14.75 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38510,
+    "FrequencyRangeName": "14.75 - 14.8 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38600,
+    "FrequencyRangeName": "14.8 - 15.35 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38700,
+    "FrequencyRangeName": "15.35 - 15.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38800,
+    "FrequencyRangeName": "15.4 - 15.43 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 38900,
+    "FrequencyRangeName": "15.43 - 15.63 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39000,
+    "FrequencyRangeName": "15.63 - 15.7 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39100,
+    "FrequencyRangeName": "15.7 - 16.6 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39200,
+    "FrequencyRangeName": "16.6 - 17.1 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39300,
+    "FrequencyRangeName": "17.1 - 17.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39400,
+    "FrequencyRangeName": "17.2 - 17.3 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39500,
+    "FrequencyRangeName": "17.3 - 17.7 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39600,
+    "FrequencyRangeName": "17.7 - 18.1 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39700,
+    "FrequencyRangeName": "18.1 - 18.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39800,
+    "FrequencyRangeName": "18.4 - 18.6 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 39900,
+    "FrequencyRangeName": "18.6 - 18.8 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40000,
+    "FrequencyRangeName": "18.8 - 19.3 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40100,
+    "FrequencyRangeName": "19.3 - 19.7 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40200,
+    "FrequencyRangeName": "19.7 - 20.1 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40300,
+    "FrequencyRangeName": "20.1 - 20.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40400,
+    "FrequencyRangeName": "20.2 - 21.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40500,
+    "FrequencyRangeName": "21.2 - 21.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40600,
+    "FrequencyRangeName": "21.4 - 22 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40700,
+    "FrequencyRangeName": "22 - 22.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40750,
+    "FrequencyRangeName": "22.2 - 22.21 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40800,
+    "FrequencyRangeName": "22.21 - 22.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 40900,
+    "FrequencyRangeName": "22.5 - 22.55 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41000,
+    "FrequencyRangeName": "22.55 - 23.15 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41100,
+    "FrequencyRangeName": "23.15 - 23.55 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41200,
+    "FrequencyRangeName": "23.55 - 23.6 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41300,
+    "FrequencyRangeName": "23.6 - 24 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41400,
+    "FrequencyRangeName": "24 - 24.05 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41500,
+    "FrequencyRangeName": "24.05 - 24.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41600,
+    "FrequencyRangeName": "24.25 - 24.45 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41700,
+    "FrequencyRangeName": "24.45 - 24.65 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41800,
+    "FrequencyRangeName": "24.65 - 24.75 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 41900,
+    "FrequencyRangeName": "24.75 - 25.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42000,
+    "FrequencyRangeName": "25.25 - 25.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42100,
+    "FrequencyRangeName": "25.5 - 26.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42110,
+    "FrequencyRangeName": "26.5 - 27 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42200,
+    "FrequencyRangeName": "27 - 27.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42300,
+    "FrequencyRangeName": "27.5 - 28.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42400,
+    "FrequencyRangeName": "28.5 - 29.1 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42500,
+    "FrequencyRangeName": "29.1 - 29.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42600,
+    "FrequencyRangeName": "29.5 - 29.9 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42700,
+    "FrequencyRangeName": "29.9 - 30 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42800,
+    "FrequencyRangeName": "30 - 31 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 42900,
+    "FrequencyRangeName": "31 - 31.3 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43000,
+    "FrequencyRangeName": "31.3 - 31.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43100,
+    "FrequencyRangeName": "31.5 - 31.8 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43200,
+    "FrequencyRangeName": "31.8 - 32 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43300,
+    "FrequencyRangeName": "32 - 32.3 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43400,
+    "FrequencyRangeName": "32.3 - 33 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43500,
+    "FrequencyRangeName": "33 - 33.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43600,
+    "FrequencyRangeName": "33.4 - 34.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43700,
+    "FrequencyRangeName": "34.2 - 34.7 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43800,
+    "FrequencyRangeName": "34.7 - 35.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 43900,
+    "FrequencyRangeName": "35.2 - 35.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44000,
+    "FrequencyRangeName": "35.5 - 36 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44100,
+    "FrequencyRangeName": "36 - 37 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44200,
+    "FrequencyRangeName": "37 - 37.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44300,
+    "FrequencyRangeName": "37.5 - 38 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44400,
+    "FrequencyRangeName": "38 - 39.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44500,
+    "FrequencyRangeName": "39.5 - 40 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44600,
+    "FrequencyRangeName": "40 - 40.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44700,
+    "FrequencyRangeName": "40.5 - 41 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44800,
+    "FrequencyRangeName": "41 - 42.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 44900,
+    "FrequencyRangeName": "42.5 - 43.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45000,
+    "FrequencyRangeName": "43.5 - 45.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45010,
+    "FrequencyRangeName": "45.5 - 47 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45100,
+    "FrequencyRangeName": "47 - 47.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45200,
+    "FrequencyRangeName": "47.2 - 47.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45300,
+    "FrequencyRangeName": "47.5 - 47.9 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45400,
+    "FrequencyRangeName": "47.9 - 48.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45500,
+    "FrequencyRangeName": "48.2 - 48.54 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45600,
+    "FrequencyRangeName": "48.54 - 49.44 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45700,
+    "FrequencyRangeName": "49.44 - 50.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45800,
+    "FrequencyRangeName": "50.2 - 50.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 45900,
+    "FrequencyRangeName": "50.4 - 51.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46000,
+    "FrequencyRangeName": "51.4 - 52.4 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46010,
+    "FrequencyRangeName": "52.4 - 52.6 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46100,
+    "FrequencyRangeName": "52.6 - 54.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46200,
+    "FrequencyRangeName": "54.25 - 55.78 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46300,
+    "FrequencyRangeName": "55.78 - 56.9 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46400,
+    "FrequencyRangeName": "56.9 - 57 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46500,
+    "FrequencyRangeName": "57 - 58.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46600,
+    "FrequencyRangeName": "58.2 - 59 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46700,
+    "FrequencyRangeName": "59 - 59.3 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46800,
+    "FrequencyRangeName": "59.3 - 64 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 46900,
+    "FrequencyRangeName": "64 - 65 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47000,
+    "FrequencyRangeName": "65 - 66 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47100,
+    "FrequencyRangeName": "66 - 71 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47200,
+    "FrequencyRangeName": "71 - 74 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47300,
+    "FrequencyRangeName": "74 - 75.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47310,
+    "FrequencyRangeName": "75.5 - 76 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47400,
+    "FrequencyRangeName": "76 - 77.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47500,
+    "FrequencyRangeName": "77.5 - 78 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47600,
+    "FrequencyRangeName": "78 - 79 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47700,
+    "FrequencyRangeName": "79 - 81 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47800,
+    "FrequencyRangeName": "81 - 84 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 47900,
+    "FrequencyRangeName": "84 - 86 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48000,
+    "FrequencyRangeName": "86 - 92 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48100,
+    "FrequencyRangeName": "92 - 94 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48200,
+    "FrequencyRangeName": "94 - 94.1 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48300,
+    "FrequencyRangeName": "94.1 - 95 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48400,
+    "FrequencyRangeName": "95 - 100 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48500,
+    "FrequencyRangeName": "100 - 102 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48600,
+    "FrequencyRangeName": "102 - 105 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48700,
+    "FrequencyRangeName": "105 - 109.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48800,
+    "FrequencyRangeName": "109.5 - 111.8 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 48900,
+    "FrequencyRangeName": "111.8 - 114.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49000,
+    "FrequencyRangeName": "114.25 - 116 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49100,
+    "FrequencyRangeName": "116 - 119.98 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49200,
+    "FrequencyRangeName": "119.98 - 120.02 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49210,
+    "FrequencyRangeName": "120.02 - 122.25 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49300,
+    "FrequencyRangeName": "122.25 - 123 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49400,
+    "FrequencyRangeName": "123 - 130 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49500,
+    "FrequencyRangeName": "130 - 134 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49600,
+    "FrequencyRangeName": "134 - 136 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49700,
+    "FrequencyRangeName": "136 - 141 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49800,
+    "FrequencyRangeName": "141 - 148.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 49900,
+    "FrequencyRangeName": "148.5 - 151.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50000,
+    "FrequencyRangeName": "151.5 - 155.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50100,
+    "FrequencyRangeName": "155.5 - 158.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50200,
+    "FrequencyRangeName": "158.5 - 164 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50300,
+    "FrequencyRangeName": "164 - 167 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50400,
+    "FrequencyRangeName": "167 - 174.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50500,
+    "FrequencyRangeName": "174.5 - 174.8 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50600,
+    "FrequencyRangeName": "174.8 - 182 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50700,
+    "FrequencyRangeName": "182 - 185 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50800,
+    "FrequencyRangeName": "185 - 190 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 50900,
+    "FrequencyRangeName": "190 - 191.8 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51000,
+    "FrequencyRangeName": "191.8 - 200 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51100,
+    "FrequencyRangeName": "200 - 202 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51110,
+    "FrequencyRangeName": "202 - 209 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51200,
+    "FrequencyRangeName": "209 - 217 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51300,
+    "FrequencyRangeName": "217 - 226 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51400,
+    "FrequencyRangeName": "226 - 231.5 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51500,
+    "FrequencyRangeName": "231.5 - 232 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51600,
+    "FrequencyRangeName": "232 - 235 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51700,
+    "FrequencyRangeName": "235 - 238 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51800,
+    "FrequencyRangeName": "238 - 239.2 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51850,
+    "FrequencyRangeName": "239.2 - 240 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 51900,
+    "FrequencyRangeName": "240 - 241 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 52000,
+    "FrequencyRangeName": "241 - 248 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 52100,
+    "FrequencyRangeName": "248 - 250 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 52200,
+    "FrequencyRangeName": "250 - 252 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 52300,
+    "FrequencyRangeName": "252 - 265 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 52400,
+    "FrequencyRangeName": "265 - 275 GHz",
+    "IsDirty": false
+  },
+  {
+    "FrequencyRangeId": 52500,
+    "FrequencyRangeName": "275 - 3000 GHz",
+    "IsDirty": false
+  }
+]

@@ -1,0 +1,784 @@
+/*
+ * Colour comes entirely from the custom properties applyTheme() writes onto
+ * :root (see src/lib/palette.ts) — nothing here hardcodes a hex, so the light and
+ * dark steps and the PDF exporter all read from one place.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius: 6px;
+  --pad: 14px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--plane);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+a {
+  color: var(--series-1);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.app {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 18px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fallback {
+  max-width: 540px;
+  margin: 18vh auto;
+  padding: 0 20px;
+  color: var(--text-secondary);
+}
+.fallback .loading {
+  color: var(--muted);
+}
+
+/* --- masthead ----------------------------------------------------------- */
+
+.masthead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.masthead h1 {
+  margin: 0 0 4px;
+  font-size: 27px;
+  letter-spacing: -0.02em;
+}
+
+.masthead p {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--text-secondary);
+}
+
+.masthead-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button.primary {
+  background: var(--series-1);
+  color: #fff;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 9px 15px;
+  font-weight: 600;
+}
+
+button.ghost {
+  background: var(--surface-1);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 38px;
+  height: 38px;
+  font-size: 15px;
+}
+
+/* --- filters & legend --------------------------------------------------- */
+
+.filters {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px var(--pad);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search {
+  flex: 1 1 340px;
+  min-width: 240px;
+}
+
+.search input,
+.jump select {
+  width: 100%;
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--axis);
+  background: var(--plane);
+  color: var(--text-primary);
+}
+
+.jump select {
+  width: auto;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.result-count {
+  margin-left: auto;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+.result-count em {
+  color: var(--muted);
+}
+
+button.reset {
+  background: none;
+  border: 1px solid var(--axis);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  padding: 6px 10px;
+}
+
+.legend {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--gridline);
+  padding-top: 9px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 99px;
+  padding: 4px 10px 4px 6px;
+  color: var(--text-secondary);
+}
+.legend-item:hover {
+  border-color: var(--axis);
+}
+.legend-item.active {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.swatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  display: inline-block;
+  flex: none;
+  box-shadow: 0 0 0 1px var(--border) inset;
+}
+
+/* --- chart -------------------------------------------------------------- */
+
+.chart {
+  position: relative;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px var(--pad) 4px;
+}
+
+.chart svg {
+  display: block;
+  touch-action: none;
+}
+
+/* One stave per ITU band ------------------------------------------------- */
+
+.stave-abbr {
+  fill: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.stave-range {
+  fill: var(--muted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.stave-plane {
+  fill: var(--gridline);
+}
+
+.stave-surface {
+  cursor: ew-resize;
+}
+
+.stave-selected {
+  fill: none;
+  stroke: var(--text-primary);
+  stroke-width: 2;
+  pointer-events: none;
+}
+
+.stave-axis line {
+  stroke: var(--axis);
+  stroke-width: 1;
+}
+
+.window-frame {
+  fill: none;
+  stroke: var(--text-primary);
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.brush-rect {
+  fill: var(--text-primary);
+  fill-opacity: 0.14;
+  stroke: var(--text-primary);
+  stroke-width: 1;
+  pointer-events: none;
+}
+
+.landmark line {
+  stroke: var(--axis);
+  stroke-width: 1;
+}
+.landmark text {
+  fill: var(--muted);
+  font-size: 8.5px;
+}
+
+.detail-plane {
+  fill: var(--gridline);
+}
+
+.detail-surface {
+  cursor: grab;
+}
+.detail-surface:active {
+  cursor: grabbing;
+}
+
+.detail-selected {
+  fill: none;
+  stroke: var(--text-primary);
+  stroke-width: 2;
+}
+
+.detail-label {
+  fill: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.35);
+  stroke-width: 2.5px;
+}
+
+.detail-sublabel {
+  fill: #fff;
+  font-size: 9px;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.35);
+  stroke-width: 2.5px;
+}
+
+.axis .axis-line,
+.axis .axis-tick {
+  stroke: var(--axis);
+  stroke-width: 1;
+}
+.axis text {
+  fill: var(--muted);
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-hint {
+  margin: 4px 0 2px;
+  color: var(--muted);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.chart-span {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 20;
+  min-width: 190px;
+  max-width: 250px;
+  pointer-events: none;
+  background: var(--surface-1);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.18);
+  padding: 9px 11px;
+  font-size: 12px;
+}
+.tooltip ul {
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.tooltip li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+}
+.tooltip-sub,
+.tooltip-hint {
+  color: var(--muted);
+}
+.tooltip-usage {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--gridline);
+  color: var(--text-secondary);
+}
+.tooltip-hint {
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+/* --- body: table + detail ---------------------------------------------- */
+
+.body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.table-pane,
+.detail {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.pane-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px var(--pad);
+  border-bottom: 1px solid var(--gridline);
+}
+.pane-head h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.band-list {
+  max-height: 62vh;
+  overflow-y: auto;
+}
+.band-list.empty {
+  padding: var(--pad);
+  color: var(--muted);
+}
+
+.band-row {
+  display: grid;
+  grid-template-columns: 170px 86px minmax(130px, 1fr) minmax(140px, 1.4fr);
+  gap: 10px;
+  padding: 7px var(--pad);
+  border-bottom: 1px solid var(--gridline);
+  align-items: baseline;
+  cursor: pointer;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 34px;
+}
+
+.band-row.head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-1);
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: default;
+  content-visibility: visible;
+}
+
+.band-row:not(.head):hover {
+  background: var(--plane);
+}
+.band-row.selected {
+  background: var(--plane);
+  box-shadow: inset 3px 0 0 var(--text-primary);
+}
+.band-row:focus-visible {
+  outline: 2px solid var(--series-1);
+  outline-offset: -2px;
+}
+
+.band-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.band-bar {
+  width: 4px;
+  height: 15px;
+  border-radius: 2px;
+  flex: none;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+}
+
+.band-families {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: var(--plane);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 1px 8px 1px 5px;
+  white-space: nowrap;
+}
+
+.band-usage {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* --- detail panel ------------------------------------------------------- */
+
+.detail-head {
+  padding: 12px var(--pad);
+  border-bottom: 1px solid var(--gridline);
+}
+.detail-head h2 {
+  margin: 0;
+  font-size: 19px;
+  font-variant-numeric: tabular-nums;
+}
+.detail-meta {
+  margin: 2px 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.detail-chips {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.detail-empty {
+  padding: 28px var(--pad);
+  color: var(--text-secondary);
+}
+.detail-empty h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.detail-columns {
+  max-height: 58vh;
+  overflow-y: auto;
+}
+
+.detail-column {
+  padding: 10px var(--pad);
+  border-bottom: 1px solid var(--gridline);
+}
+.detail-column:last-child {
+  border-bottom: 0;
+}
+.detail-column h3 {
+  margin: 0 0 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.detail-column ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+.detail-none {
+  margin: 0;
+  color: var(--muted);
+}
+
+.entry {
+  font-size: 13px;
+  white-space: pre-line;
+}
+.entry.plain {
+  color: var(--text-secondary);
+}
+.entry.primary {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.entry.link {
+  background: var(--plane);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 7px;
+  color: var(--text-primary);
+  text-align: left;
+}
+.entry.link:hover {
+  border-color: var(--series-1);
+  color: var(--series-1);
+}
+/* ITU and European footnotes are numerous and secondary — keep them quiet. */
+.entry.link.type-8,
+.entry.link.type-6 {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+/* --- content drawer ----------------------------------------------------- */
+
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.42);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawer {
+  width: min(520px, 100%);
+  height: 100%;
+  overflow-y: auto;
+  background: var(--surface-1);
+  border-left: 1px solid var(--border);
+  padding: 18px 22px 40px;
+}
+
+.drawer header {
+  position: relative;
+  padding-right: 34px;
+  border-bottom: 1px solid var(--gridline);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+.drawer-type {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.drawer h2 {
+  margin: 2px 0 0;
+  font-size: 20px;
+}
+.drawer-close {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  background: none;
+  border: 0;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--muted);
+}
+
+.drawer-body p {
+  margin: 0 0 10px;
+  color: var(--text-primary);
+}
+.drawer-body.muted,
+.muted {
+  color: var(--muted);
+}
+
+.drawer-source {
+  margin: 4px 0 18px;
+}
+
+.drawer-citing h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.drawer-citing ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.drawer-citing button {
+  background: var(--plane);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.drawer-citing button:hover {
+  border-color: var(--series-1);
+}
+
+/* --- poster menu -------------------------------------------------------- */
+
+.poster {
+  position: relative;
+}
+
+.poster-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 40;
+  width: 300px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
+  padding: 12px;
+}
+.poster-blurb,
+.poster-note {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.poster-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+.poster-scope {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gridline);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.poster-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.poster-menu ul button {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  background: var(--plane);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 7px 10px;
+  color: var(--text-primary);
+  text-align: left;
+}
+.poster-menu ul button:hover:not(:disabled) {
+  border-color: var(--series-1);
+}
+.poster-menu ul button span {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* --- footer ------------------------------------------------------------- */
+
+.site-foot {
+  color: var(--muted);
+  font-size: 12px;
+}
+.site-foot p {
+  margin: 0;
+}
+
+@media print {
+  .filters,
+  .masthead-actions,
+  .chart-hint {
+    display: none;
+  }
+}
