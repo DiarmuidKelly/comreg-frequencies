@@ -1,5 +1,7 @@
 # The Irish Radio Spectrum
 
+### → [diarmuidkelly.github.io/comreg-frequencies](https://diarmuidkelly.github.io/comreg-frequencies/)
+
 An interactive explorer for ComReg's [Radio Frequency Plan for Ireland](https://rfpi.comreg.ie/) —
 all 566 allocated bands from 3 kHz to 3 THz, with every ITU footnote, statutory instrument, ECC
 Decision and ComReg note in full. Plus a printable vector wall chart of the whole spectrum.
