@@ -25,7 +25,7 @@ const RETRIES = 3;
 async function getJson(url, attempt = 1) {
   try {
     const res = await fetch(url, {
-      headers: { accept: 'application/json', 'user-agent': 'comreg-freq/1.0 (+https://github.com/DiarmuidKelly/comreg-freq)' },
+      headers: { accept: 'application/json', 'user-agent': 'comreg-frequencies/1.0 (+https://github.com/DiarmuidKelly/comreg-frequencies)' },
       signal: AbortSignal.timeout(30_000),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);

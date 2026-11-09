@@ -10,7 +10,7 @@ NODE_MODULES := node_modules/.package-lock.json
 DATA := public/data/spectrum.json
 RAW := data/raw/content.json
 PORT ?= 5173
-# Set for a GitHub Pages project site, e.g. BASE_PATH=/comreg-freq/
+# Set for a GitHub Pages project site, e.g. BASE_PATH=/comreg-frequencies/
 BASE_PATH ?= /
 
 .PHONY: help
@@ -74,13 +74,15 @@ build: install data ## Production build into dist/
 preview: build ## Serve the production build locally
 	npm run preview -- --port $(PORT) --strictPort
 
-.PHONY: deploy-pages
-deploy-pages: ## Push to main, which triggers the GitHub Pages workflow
-	git push origin main
+# main is protected: it takes pull requests only, so this opens one rather than
+# pushing. Merging it is what triggers the GitHub Pages deploy.
+.PHONY: pr
+pr: check ## Open a PR for the current branch (main takes PRs only)
+	gh pr create --fill --base main
 
 .PHONY: deploy-cf
 deploy-cf: build ## Publish dist/ to Cloudflare Pages (needs wrangler + auth)
-	npx wrangler pages deploy dist --project-name comreg-freq
+	npx wrangler pages deploy dist --project-name comreg-frequencies
 
 # --- housekeeping ---------------------------------------------------------
 
