@@ -136,8 +136,14 @@ export function SpectrumChart({
   // --- stave brush: drag across any stave to set the window ---------------
   const [brush, setBrush] = useState<{ stave: number; from: number; to: number } | null>(null);
 
+  /**
+   * Staves navigate; the detail strip selects. A plain click on a stave frames
+   * that whole ITU band below, which is the view you want before picking a band
+   * out of it — dragging is there for when you already know the sub-range.
+   */
   const onStavePointerDown = (staveIndex: number) => (event: React.PointerEvent<SVGRectElement>) => {
     const scale = staveScales[staveIndex];
+    const itu = ITU_BANDS[staveIndex];
     const originX = localX(event.clientX);
     setBrush({ stave: staveIndex, from: originX, to: originX });
 
@@ -151,13 +157,7 @@ export function SpectrumChart({
       setBrush(null);
 
       if (Math.abs(endX - originX) < 4) {
-        // A tap selects the band under the pointer and frames it.
-        const hz = scale.invert(originX);
-        const hit = perStave[staveIndex].find(({ range }) => hz >= range.lo && hz < range.hi);
-        if (hit) {
-          onSelect(hit.band);
-          setWindowClamped(hit.range.lo / 1.2, hit.range.hi * 1.2);
-        }
+        setWindowClamped(itu.lo, itu.hi);
       } else {
         setWindowClamped(scale.invert(originX), scale.invert(endX));
       }
@@ -165,6 +165,12 @@ export function SpectrumChart({
 
     globalThis.addEventListener('pointermove', move);
     globalThis.addEventListener('pointerup', up);
+  };
+
+  /** Row headers do the same thing, so the whole row reads as one control. */
+  const zoomToStave = (staveIndex: number) => {
+    const itu = ITU_BANDS[staveIndex];
+    setWindowClamped(itu.lo, itu.hi);
   };
 
   const clampToPlot = (x: number) => Math.max(LABEL_W, Math.min(LABEL_W + plotW, x));
@@ -251,6 +257,7 @@ export function SpectrumChart({
             window={win}
             brush={brush?.stave === i ? brush : null}
             onPointerDown={onStavePointerDown(i)}
+            onZoomToStave={() => zoomToStave(i)}
             onHover={(band, x) => setHover(band ? { band, x, y: i * STAVE_PITCH + STAVE_H } : null)}
           />
         ))}
@@ -339,8 +346,8 @@ export function SpectrumChart({
       {hover && <Tooltip band={hover.band} x={hover.x} y={hover.y} width={width} />}
 
       <p className="chart-hint">
-        Drag across any stave to zoom · click a band to open it · scroll the lower strip to zoom,
-        drag to pan
+        Click a stave to frame that band below · drag across one to zoom further · click a band in
+        the lower strip to open it
         <span className="chart-span">
           Showing {formatHz(win.lo)} – {formatHz(win.hi)}
         </span>
@@ -363,6 +370,7 @@ interface StaveProps {
   window: Window;
   brush: { from: number; to: number } | null;
   onPointerDown: (event: React.PointerEvent<SVGRectElement>) => void;
+  onZoomToStave: () => void;
   onHover: (band: Band | null, x: number) => void;
 }
 
@@ -378,6 +386,7 @@ function Stave({
   window: win,
   brush,
   onPointerDown,
+  onZoomToStave,
   onHover,
 }: StaveProps) {
   const marks = useMemo(
@@ -392,13 +401,29 @@ function Stave({
 
   return (
     <g transform={`translate(0,${y})`}>
-      {/* Row header */}
-      <text x={0} y={STAVE_H - 7} className="stave-abbr">
-        {itu.abbr}
-      </text>
-      <text x={38} y={STAVE_H - 7} className="stave-range">
-        {formatHz(itu.lo)}–{formatHz(itu.hi)}
-      </text>
+      {/* Row header — a control in its own right: activating it frames the
+          whole band in the detail strip, same as clicking the stave. */}
+      <g
+        className="stave-head"
+        role="button"
+        tabIndex={0}
+        aria-label={`Zoom to ${itu.name}, ${formatHz(itu.lo)} to ${formatHz(itu.hi)}`}
+        onClick={onZoomToStave}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            onZoomToStave();
+          }
+        }}
+      >
+        <rect x={0} y={0} width={LABEL_W - 8} height={STAVE_H} fill="transparent" />
+        <text x={0} y={STAVE_H - 7} className="stave-abbr">
+          {itu.abbr}
+        </text>
+        <text x={38} y={STAVE_H - 7} className="stave-range">
+          {formatHz(itu.lo)}–{formatHz(itu.hi)}
+        </text>
+      </g>
 
       <rect x={LABEL_W} y={0} width={plotW} height={STAVE_H} className="stave-plane" />
 

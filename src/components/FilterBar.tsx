@@ -6,7 +6,7 @@
  * on screen.
  */
 import { FAMILIES, ITU_BANDS, familyColour, formatHz } from '../lib/spectrum';
-import { hasActiveFilters, parseFrequency, type Filters } from '../lib/search';
+import { EMPTY_FILTERS, hasActiveFilters, parseFrequency, type Filters } from '../lib/search';
 
 interface Props {
   filters: Filters;
@@ -96,7 +96,7 @@ export function FilterBar({
           <button
             type="button"
             className="reset"
-            onClick={() => onChange({ query: '', families: new Set(), window: null, primaryOnly: false })}
+            onClick={() => onChange(EMPTY_FILTERS)}
           >
             Reset filters
           </button>

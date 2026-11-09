@@ -40,8 +40,8 @@ export function App() {
   const haystacks = useMemo(() => (data ? buildHaystacks(data) : []), [data]);
 
   const results = useMemo(
-    () => (data ? applyFilters(data, haystacks, filters) : []),
-    [data, haystacks, filters],
+    () => (data ? applyFilters(data, haystacks, filters, window_) : []),
+    [data, haystacks, filters, window_],
   );
   const visibleIds = useMemo(() => new Set(results.map((band) => band.id)), [results]);
 
@@ -147,13 +147,8 @@ export function App() {
             <label className="toggle">
               <input
                 type="checkbox"
-                checked={filters.window !== null}
-                onChange={(event) =>
-                  setFilters({
-                    ...filters,
-                    window: event.target.checked ? { lo: window_.lo, hi: window_.hi } : null,
-                  })
-                }
+                checked={filters.limitToWindow}
+                onChange={(event) => setFilters({ ...filters, limitToWindow: event.target.checked })}
               />
               Limit to the zoomed view
             </label>
@@ -195,6 +190,6 @@ function describeFilters(filters: Filters, shown: number, total: number): string
   if (filters.query.trim()) parts.push(`matching “${filters.query.trim()}”`);
   if (filters.families.size) parts.push(`${[...filters.families].join(', ')}`);
   if (filters.primaryOnly) parts.push('primary allocations only');
-  if (filters.window) parts.push('within the zoomed view');
+  if (filters.limitToWindow) parts.push('within the zoomed view');
   return `${shown} of ${total} bands${parts.length ? ` · ${parts.join(' · ')}` : ''}`;
 }

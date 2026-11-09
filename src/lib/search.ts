@@ -11,8 +11,13 @@ export interface Filters {
   query: string;
   /** Family keys to keep; empty means no family filter. */
   families: Set<string>;
-  /** Hertz window to intersect against; null means the whole spectrum. */
-  window: { lo: number; hi: number } | null;
+  /**
+   * Whether to intersect against the chart's zoom window. A flag rather than a
+   * copy of the range, so the list keeps following the window as it moves —
+   * snapshotting it here would freeze the list at whatever was on screen when
+   * the box was ticked.
+   */
+  limitToWindow: boolean;
   /** When true, keep only bands with a primary allocation in a chosen family. */
   primaryOnly: boolean;
 }
@@ -20,7 +25,7 @@ export interface Filters {
 export const EMPTY_FILTERS: Filters = {
   query: '',
   families: new Set(),
-  window: null,
+  limitToWindow: false,
   primaryOnly: false,
 };
 
@@ -28,7 +33,7 @@ export function hasActiveFilters(filters: Filters): boolean {
   return (
     filters.query.trim() !== '' ||
     filters.families.size > 0 ||
-    filters.window !== null ||
+    filters.limitToWindow ||
     filters.primaryOnly
   );
 }
@@ -87,15 +92,17 @@ export function applyFilters(
   data: SpectrumData,
   haystacks: string[],
   filters: Filters,
+  /** The chart's live zoom window, used only when `limitToWindow` is set. */
+  window: { lo: number; hi: number },
 ): Band[] {
   const terms = parseQuery(filters.query);
   const tuned = parseFrequency(filters.query);
   const familyKeys = filters.families;
 
   return data.bands.filter((band) => {
-    if (filters.window) {
+    if (filters.limitToWindow) {
       if (band.lo == null || band.hi == null) return false;
-      if (band.hi <= filters.window.lo || band.lo >= filters.window.hi) return false;
+      if (band.hi <= window.lo || band.lo >= window.hi) return false;
     }
 
     if (familyKeys.size > 0) {

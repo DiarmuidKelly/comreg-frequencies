@@ -232,6 +232,21 @@ button.reset {
 
 /* One stave per ITU band ------------------------------------------------- */
 
+.stave-head {
+  cursor: pointer;
+}
+.stave-head:hover .stave-abbr,
+.stave-head:focus-visible .stave-abbr {
+  fill: var(--series-1);
+}
+.stave-head:hover .stave-range {
+  fill: var(--text-secondary);
+}
+.stave-head:focus-visible {
+  outline: 2px solid var(--series-1);
+  outline-offset: 1px;
+}
+
 .stave-abbr {
   fill: var(--text-primary);
   font-size: 12px;
