@@ -303,6 +303,16 @@ button.reset {
   fill: var(--muted);
   font-size: 8.5px;
 }
+/* Secondary annotations — present, but they should not compete with the
+   headline allocations sitting beside them. */
+.landmark.minor text {
+  font-size: 8px;
+  opacity: 0.78;
+}
+.landmark:hover text {
+  fill: var(--text-primary);
+  opacity: 1;
+}
 
 .detail-plane {
   fill: var(--gridline);

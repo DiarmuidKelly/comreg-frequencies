@@ -23,6 +23,7 @@ import {
   formatHz,
   formatTick,
   plotRange,
+  type Landmark,
   type ItuBand,
 } from '../lib/spectrum';
 import type { Band, SpectrumData } from '../lib/types';
@@ -498,7 +499,11 @@ function Stave({
           <line key={tick} x1={scale(tick)} y1={0} x2={scale(tick)} y2={3} />
         ))}
         {marks.map(({ mark, x }) => (
-          <g key={mark.label} className="landmark">
+          <g key={mark.label} className={`landmark${mark.minor ? ' minor' : ''}`}>
+            <title>
+              {`${mark.label}: ${formatHz(mark.lo)} – ${formatHz(mark.hi)}`}
+              {mark.note ? `\n${mark.note}` : ''}
+            </title>
             <line x1={x} y1={0} x2={x} y2={3} />
             <text x={x} y={STAVE_GAP - 4} textAnchor="middle">
               {mark.label}
@@ -553,24 +558,34 @@ function staveTicks(itu: ItuBand): number[] {
 
 /**
  * Landmark captions for one stave, dropping any that would overprint a
- * neighbour. A decade across the full width leaves room for most of them.
+ * neighbour. Major landmarks are placed first and minor ones fill the gaps, so
+ * a crowded decade like UHF keeps DTT and GSM rather than whichever amateur
+ * band happened to come first in the list.
  */
 function placeLandmarks(itu: ItuBand, scale: (hz: number) => number, plotW: number) {
-  const placed: { mark: (typeof LANDMARKS)[number]; x: number }[] = [];
-  let rightEdge = -Infinity;
-
-  for (const mark of LANDMARKS) {
+  const mine = LANDMARKS.filter((mark) => {
     const centre = Math.sqrt(mark.lo * mark.hi);
-    if (centre < itu.lo || centre >= itu.hi) continue;
-    const x = scale(centre);
-    // ~4.9px per character at 8.5px type, plus breathing room.
-    const half = (mark.label.length * 4.9) / 2 + 5;
-    if (x - half < LABEL_W || x + half > LABEL_W + plotW) continue;
-    if (x - half <= rightEdge) continue;
-    rightEdge = x + half;
+    return centre >= itu.lo && centre < itu.hi;
+  });
+
+  const placed: { mark: Landmark; x: number }[] = [];
+  const spans: [number, number][] = [];
+
+  const tryPlace = (mark: Landmark) => {
+    const x = scale(Math.sqrt(mark.lo * mark.hi));
+    // Measured: the system sans averages ~4.4px per character at 8.5px, across
+    // these labels' mix of digits, spaces and lower-case. Plus 4px of air.
+    const half = (mark.label.length * 4.4) / 2 + 4;
+    if (x - half < LABEL_W || x + half > LABEL_W + plotW) return;
+    if (spans.some(([lo, hi]) => x - half < hi && x + half > lo)) return;
+    spans.push([x - half, x + half]);
     placed.push({ mark, x });
-  }
-  return placed;
+  };
+
+  for (const mark of mine) if (!mark.minor) tryPlace(mark);
+  for (const mark of mine) if (mark.minor) tryPlace(mark);
+
+  return placed.sort((a, b) => a.x - b.x);
 }
 
 /** 1-2-5 ticks across the zoom window, thinned so labels never collide. */
