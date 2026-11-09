@@ -36,6 +36,7 @@ make help       # list every target
 | `make check` | Type-check |
 | `make build` | Production build into `dist/` |
 | `make preview` | Serve the production build |
+| `make pr` | Type-check, then open a PR (`main` takes PRs only) |
 | `make deploy-cf` | Publish `dist/` to Cloudflare Pages |
 | `make clean` | Remove `dist/` and the generated bundle |
 
@@ -89,9 +90,13 @@ view.
 
 ## Deploying
 
-**GitHub Pages** — `.github/workflows/deploy.yml` builds and publishes on every push to `main`.
-Enable Pages with "GitHub Actions" as the source. The workflow sets `BASE_PATH` to `/<repo>/`
-automatically for a project page.
+**GitHub Pages** — live at
+[diarmuidkelly.github.io/comreg-frequencies](https://diarmuidkelly.github.io/comreg-frequencies/).
+`.github/workflows/deploy.yml` builds and publishes on every push to `main`, and `main` is
+protected, so in practice that means *on merge*. Pages must be set to "GitHub Actions" as the
+source, not "deploy from a branch" — this builds from source rather than serving committed HTML.
+The workflow derives `BASE_PATH` from the repository name, so a project page resolves its assets
+without any manual configuration.
 
 **Cloudflare Pages** — build command `npm run build`, output directory `dist`, and leave
 `BASE_PATH` unset for a domain root. Or `make deploy-cf` with wrangler.
